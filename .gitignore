@@ -1,0 +1,26 @@
+﻿# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Python
+ml-service/venv/
+ml-service/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Spring Boot / Maven
+backend/target/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Environment / secrets
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
