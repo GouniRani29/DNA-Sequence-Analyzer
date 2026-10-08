@@ -51,3 +51,62 @@ DNA sequence:
 
 ```text
 ATGCGTAC
+🧠 Methodology
+DNA Sequence
+      ↓
+Preprocessing
+      ↓
+6-mer Tokenization
+      ↓
+Token Embedding
+      ↓
+Positional Encoding
+      ↓
+Transformer Encoder
+      ↓
+Classification Head
+      ↓
+Softmax
+      ↓
+Predicted Class + Confidence
+
+## Transformer Architecture
+The Transformer model consists of:
+1. Token Embedding
+2. Positional Encoding
+3. Multi-Head Self-Attention
+4. Add & Layer Normalization
+5. Feed-Forward Network
+6. Add & Layer Normalization
+7. Classification Head
+8. Softmax Output
+The Transformer uses self-attention to learn relationships between different positions in a DNA sequence.
+
+🛠️ Technology Stack
+Frontend
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+Backend
+- Java
+- Spring Boot
+- Spring Data JPA
+- Maven
+- REST APIs
+Machine Learning
+- Python
+- PyTorch
+- XGBoost
+- Scikit-learn
+- NumPy
+- Pandas
+Database
+- MySQL
+Tools
+- Visual Studio Code
+- Spring Tool Suite
+- Postman
+- Git
+- GitHub
