@@ -43,3 +43,102 @@ For the DNA sequence:
 
 ```text
 ATGCGTAC
+
+---
+
+## 🏗️ System Architecture
+
+The system follows a three-layer architecture consisting of the React frontend, Spring Boot backend, and Python machine learning service.
+
+```text
+                         USER
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │  React Frontend │
+                  │    (Vite)       │
+                  └────────┬────────┘
+                           │
+                           │ REST API
+                           ▼
+                  ┌─────────────────┐
+                  │ Spring Boot     │
+                  │    Backend      │
+                  └────────┬────────┘
+                           │
+                           │ REST API
+                           ▼
+                  ┌─────────────────┐
+                  │  Flask ML       │
+                  │    Service      │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ DNA Preprocessing│
+                  │   & 6-mer       │
+                  │  Tokenization   │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │   Transformer   │
+                  │     Model       │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Classification  │
+                  │     Head        │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Prediction +    │
+                  │   Confidence    │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Spring Boot +   │
+                  │     MySQL       │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ React Frontend  │
+                  │ Display Result  │
+                  └─────────────────┘
+User enters DNA sequence
+          ↓
+React Frontend
+          ↓
+Spring Boot REST API
+          ↓
+Flask ML Service
+          ↓
+DNA Validation & Preprocessing
+          ↓
+6-mer Tokenization
+          ↓
+Token Embedding
+          ↓
+Positional Encoding
+          ↓
+Transformer Encoder
+          ↓
+Classification Head
+          ↓
+Softmax Probabilities
+          ↓
+Predicted Class
+          ↓
+Confidence Score
+          ↓
+Spring Boot
+          ↓
+MySQL
+          ↓
+React Frontend
+          ↓
+Display Result
