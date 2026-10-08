@@ -24,3 +24,5 @@ backend/target/
 # OS
 .DS_Store
 Thumbs.db
+# Spring Boot local configuration
+backend/src/main/resources/application.properties
